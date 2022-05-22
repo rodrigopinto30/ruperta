@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+$colorPrimary : #9720a1;
+$colorSecondary : #251c1c;
+
+.homeContainer{
+    text:{
+        align: center;
+    }
+    .row{
+        margin: {
+            top: 20%;
+        };
+        align:{
+            items: center;
+        }
+        .col-md-8{
+            input{
+                border:{
+                    radius: 30px;
+                }
+            }
+            .linkBoton{
+                color: $colorSecondary;
+                border:{
+                    radius: 30px;
+                    color: $colorSecondary;
+                }
+                background:{
+                    color: white;
+                } 
+            }
+        }
+    }
+
+    .headerHomeContainer{
+        text:{
+            align: left;
+        }
+    }
+}
+img{
+    width: 7%
+}
+
+// Main container
+.mainContainer{
+    position: relative;
+}
+
+// Navbar
+.navbar{
+    width: 100%;
+    position: fixed;
+
+    .navbarContainer{
+        .formContainer{
+            width: 100%;
+            .form{
+                width: 100%;
+                text-align: center;
+                .form-control{
+                    display: inline-block;
+                    width: 50%;
+                    border:{
+                        radius: 30px;
+                    }
+                }
+                .form-control:hover{
+                    box:{
+                        shadow: 1px 2px #e3e0e0;
+                    }
+                }
+                .btn{
+                    background:{
+                        color: white;
+                    }
+                    display: inline-block;
+                    color: black;
+                    border:{
+                        color: black;
+                        radius: 30px;
+                    }
+                }
+                .btn:hover{
+                    background:{
+                        color: black;
+                    }
+                    color: white;
+                    border:{
+                        color:white;
+                    }
+                }
+
+            }
+        }
+        .navbar-brand{
+            color: black;
+            font:{
+                size: 1.5rem;
+            }
+        }
+    }
+}
+
+// Result
+.resultContainer{
+    margin:{
+        top:2%;
+    }
+}
+
+// NFTGrid
+.nftContainer{
+    .parrafoResultado{
+        span{
+            font-weight: 700;
+        }
+    }
+    .nftRow{  
+
+        // NFTCard
+        .nftColumn{
+
+
+            cursor: pointer;
+            margin: {
+                top: 2%;
+            };
+            text{
+                align: center
+            }
+            .caractContainer{
+                padding: 4%;
+                border:{
+                    radius: 11px;
+                }
+                background:{
+                    color: lightseagreen;
+                } 
+                .titlesContainer{
+                    padding:{
+                        top: 1%;
+                        bottom: 0%;
+                        left: 1%;
+                        right: 1%;
+                    };                    
+                    .name{
+                        width: 50%;
+                        text:{
+                            align: initial;
+                            overflow: ellipsis;
+                        }
+                        white:{
+                            space: nowrap;
+                        }
+                        display: inline-block;
+                        margin:{
+                            bottom: 0%;
+                        }
+                        
+                    }
+                    .price{
+                        width: 50%;
+                        text:{
+                            align: end;
+                        }
+                        display: inline-block;
+                        margin:{
+                            bottom: 0%;
+                        }
+                    }
+                }
+                .ownerContainer{
+                    text:{
+                        align: center;
+                    }
+                    font:{
+                        size: 85%;
+                    }
+                    .ownerImg{
+                        border:{
+                            radius: 12px;
+                        }
+                        width: 10%;
+                        display: inline-block;
+                    }
+                    .owner{
+                        text:{
+                            align: initial;
+                        }
+                        width: 80%;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Info Table
+.infoContainer{
+    .infoRow{
+        margin:{
+            top: 2%;
+        }
+        .rowInfoContainer{
+            cursor: pointer;
+            margin:{
+                top: 2%;
+            }
+            .rowInfoAuthorContainer{
+                .rowInfoImg{
+                    border-radius: 40px;
+                    border: 2px solid white;
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+            .rowInfoDesciptContainer{
+                padding:{
+                    left: 1%;
+                }
+                .rowInfoTitle{
+                    font:{
+                        size: 1.2rem;
+                        weight: 600;
+                    }
+                    color: green;
+                }
+                .rowInfoLink{
+                    color: blue;
+                    font-size: 80%;
+                }
+            }
+        }
+    }
+}
+
+// Filter
+.filterContainer{
+    //margin
+    text-align: -webkit-center;
+    .filterRow{
+        width: 60%;
+    }
+}
+
+
+
+
+@import "bootstrap/scss/bootstrap";
